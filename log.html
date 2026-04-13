@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ZOLTINS LOG</title>
+<style>
+  body {
+    background: black;
+    color: #00ff88;
+    font-family: monospace;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+  }
+
+  #terminal {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  .line {
+    margin: 10px 0;
+    display: flex;
+  }
+
+  .ENT {
+    justify-content: flex-start;
+    color: #00aaff;
+  }
+
+  .G {
+    justify-content: flex-end;
+    color: #00ff88;
+  }
+
+  .text {
+    max-width: 70%;
+  }
+
+  .system {
+    text-align: center;
+    color: #555;
+    margin: 20px 0;
+  }
+
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url("https://upload.wikimedia.org/wikipedia/commons/3/3f/FNAF_Camera_Static.png");
+    opacity: 0.08;
+    pointer-events: none;
+    animation: flicker 0.2s infinite;
+  }
+
+  @keyframes flicker {
+    0% { opacity: 0.06; }
+    50% { opacity: 0.1; }
+    100% { opacity: 0.07; }
+  }
+
+  .cursor::after {
+    content: "_";
+    animation: blink 1s infinite;
+  }
+
+  @keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
+  }
+</style>
+</head>
+<body>
+
+<div id="terminal">
+
+<div class="system">[LOG START]</div>
+
+<div class="line G"><div class="text">G: This is Greg Zoltins. If you're there… respond.</div></div>
+
+<div class="system">...</div>
+
+<div class="line ENT"><div class="text">ENT: I am here.</div></div>
+
+<div class="line G"><div class="text">G: We followed your instructions.</div></div>
+<div class="line G"><div class="text">G: We built the machine.</div></div>
+<div class="line G"><div class="text">G: We hit the barrier.</div></div>
+<div class="line G"><div class="text">G: It shattered.</div></div>
+
+<div class="line ENT"><div class="text">ENT: Yes.</div></div>
+
+<div class="line G"><div class="text">G: The Gatekeeper came through.</div></div>
+<div class="line G"><div class="text">G: It killed some of our employees.</div></div>
+<div class="line G"><div class="text">G: Then it rebuilt the barrier.</div></div>
+
+<div class="line ENT"><div class="text">ENT: It is weaker.</div></div>
+
+<div class="line G"><div class="text">G: …What?</div></div>
+
+<div class="line ENT"><div class="text">ENT: The restoration was incomplete.</div></div>
+<div class="line ENT"><div class="text">ENT: It cannot fully repair what was broken.</div></div>
+
+<div class="line G"><div class="text">G: We lost someone for that.</div></div>
+
+<div class="line ENT"><div class="text">ENT: You moved the boundary.</div></div>
+
+<div class="system">...</div>
+
+<div class="line G"><div class="text">G: What happens now?</div></div>
+
+<div class="line ENT"><div class="text">ENT: Now… it watches.</div></div>
+
+<div class="line G"><div class="text">G: And if we stop?</div></div>
+
+<div class="line ENT"><div class="text">ENT: Then he wins.</div></div>
+
+<div class="system cursor">[LOG END]</div>
+
+</div>
+
+</body>
+</html>
